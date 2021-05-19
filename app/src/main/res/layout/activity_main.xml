@@ -29,6 +29,5 @@
         android:layout_height="wrap_content"
         android:src="@drawable/banana"
         tools:ignore="UseAppTint"
-        android:tint="#70ff00ff"
-         />
+        android:tint="#70ff00ff" />
 </LinearLayout>
