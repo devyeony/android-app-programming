@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        textSize 속성
+        - 텍스트의 폰트 크기 지정
+        - 실수 타입으로 정밀한 크기를 지정할 수 있음
+        - 숫자 뒤에 sp, dp, px, in, mm 등의 크기와 관련된 단위와 함께 지정
+        - 텍스트는 폰트 크기에 따라 가변적인 sp 단위를 쓰는 것이 가장 합리적인 방법
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="50dp" />
+
+</LinearLayout>

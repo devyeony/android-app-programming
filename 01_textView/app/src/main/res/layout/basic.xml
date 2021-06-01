@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        text 속성
+        - TextView의 가장 중요한 속성으로 출력할 문자열을 지정
+        - 기본적으로 빈 문자열을 가짐
+        - 안드로이드 애플리케이션의 메시지 관리를 위해서는 문자열을 직접 지정하기보다
+          strings.xml에 문자열을 정의해놓고 id를 지정하여 필요할 때 호출하여 동적으로 관리
+        - '\' 문자가 들어가면 이스케이프 됨.
+        - '\n\'은 개행이며 '\uxxxxx'는 유니코드 문자임
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="30dp" />
+
+</LinearLayout>
