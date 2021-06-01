@@ -5,23 +5,24 @@
     android:layout_height="match_parent">
 
     <!--
-        textSize 속성
-        - 텍스트의 폰트 크기 지정
-        - 실수 타입으로 정밀한 크기를 지정할 수 있음
-        - 숫자 뒤에 sp, dp, px, in, mm 등의 크기와 관련된 단위와 함께 지정
-        - 텍스트는 폰트 크기에 따라 가변적인 sp 단위를 쓰는 것이 가장 합리적인 방법
+        typeface 속성
+        - 글꼴의 모양을 지정하는 속성
+        - 모바일 환경에서는 내장된 폰트 개수에 제약이 있으므로 다양한 글꼴을 지정하기는 무리가 있음
+        - normal, sans, serif, monospace 중 하나로 글꼴 모양만 지정할 수 있음
     -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
-        android:textSize="30dp" />
+        android:textSize="35dp"
+        android:typeface="serif" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
-        android:textSize="50dp" />
+        android:textSize="35dp"
+        android:typeface="monospace" />
 
 </LinearLayout>

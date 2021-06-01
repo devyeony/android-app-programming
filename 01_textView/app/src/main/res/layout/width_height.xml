@@ -5,17 +5,18 @@
     android:layout_height="match_parent">
 
     <!--
-        textColor 속성
-        - 문자열의 색상을 지정하며, #rrggbb나 #aarrggbb 형식으로 지정
-        - a는 색의 투명도를 설정하는 알파값, r은 빨간색, g는 초록색, b는 파란색
-        - 해당 속성값들이 높을수록 해당 색의 농도가 진해짐
+        width, height 속성
+        - TextView의 폭과 넓이를 지정하는 속성
+        - 크기 값과 단위를 같이 지정해줘야 함
+        - 절대적인 크기를 지정하는 것보다는 레이아웃 내부의 상대적인 크기가 더 중요함
     -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
-        android:textSize="30dp"
-        android:textColor="#ff405aff" />
+        android:textSize="35dp"
+        android:width="50dp"
+        android:height="200dp" />
 
 </LinearLayout>

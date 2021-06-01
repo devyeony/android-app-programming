@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        singleLine 속성
+        - 텍스트가 위젯의 폭보다 더 길 때 강제로 한줄에 출력하도록 하는 속성
+        - 위젯의 폭을 넘는 문자열은 오른쪽 끝이 잘리고 대신 줄 끝에 "..."과 같은 생략 표시가 나타남
+        - true : 한 줄에 출력
+        - false(기본값) : 위젯의 폭보다 넓은 문자열은 자동으로 개행
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="35dp"
+        android:singleLine="true"
+        android:width="100dp" />
+
+</LinearLayout>
