@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        EditText
+        - 문자열을 입력받는 위젯이며 간단히 줄여 에디트라고 부름
+        - TextView의 서브 클래스이므로 TextView의 모든 속성 사용 가능
+        - 문자열 편집과 관련된 메서드를 제공
+        - 아래 코드에서 EditText의 폭이 wrap_content로 지정되어 있으므로
+          문자열을 입력하면 폭이 늘어나며 여러 줄 입력도 가능
+    -->
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input    Please" />
+
+    <!--
+        Button
+        - 사용자가 선택해 명령을 내릴 수 있는 버튼 위젯
+        - 클릭 이벤트 발생을 처리하기 위해서는 JAVA 코드를 수정해야 함
+    -->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT" />
+
+</LinearLayout>
