@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        tint 속성
+        - ImageView의 이미지에 색조를 입힘
+        - 각 자리마다 16진수 코드가 들어가며, 2자리씩 하나의 색을 나타냄 (#aarrggbb의 형태)
+        - 이미지에 색조를 지정하면 이미지 위에 덮여 출력됨
+        - 불투명한 색은 이미지를 완전히 가리므로 src 속성에 단색을 주는 것과 같은 효과
+    -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banana"
+        tools:ignore="UseAppTint"
+        android:tint="#70ff00ff" />
+
+</LinearLayout>

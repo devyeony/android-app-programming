@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        maxHeight, maxWidth, minHeight, minWidth 속성
+        - 화면에 표시되는 이미지가 출력될 최대/최소 크기를 지정하는 속성
+    -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banana"
+        android:maxWidth="100pt"
+        android:maxHeight="100pt" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/earth"
+        android:maxWidth="50pt"
+        android:maxHeight="50pt"
+        android:adjustViewBounds="true" />
+
+</LinearLayout>

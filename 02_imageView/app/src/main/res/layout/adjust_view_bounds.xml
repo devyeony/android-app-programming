@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        adjustViewBounds 속성
+        - 화면에 표시되는 이미지의 비율(종횡비)를 맞추기 위해 ImageView의 크기에 대한 한계값을 지정
+        - 아래 코드에서 adjustViewBounds가 설정되면
+          maxWidth와 maxHeight에서 동일하게 설정된 가로세로 비율이 무시됨
+    -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banana"
+        android:maxWidth="50pt"
+        android:maxHeight="50pt"
+        android:adjustViewBounds="true" />
+
+</LinearLayout>
