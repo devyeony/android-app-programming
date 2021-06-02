@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    RelativeLayout
+    - 위젯과 부모 View와의 위치 관계 또는 위젯끼리의 관계를 지정함으로써 View를 배치
+    - 서로 간의 위치 관계가 화면이 구성되는 결과를 결정함
+    - 위젯끼리의 관계를 지정하려면 먼저 '누구'를 지칭하기 위한 id가 필요하므로
+      기준이 되는 위젯에 id를 지정해야 함
+    - 상대적 위치가 지정되지 않으면, 자식 View의 기본 위치는 좌측 상단이 됨
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TARGET"
+        android:layout_centerInParent="true"
+        android:id="@+id/target"
+        android:textSize="30sp"
+        android:background="#00D8FF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/target"
+        android:text="LEFT"
+        android:id="@+id/left"
+        android:textSize="20sp"
+        android:background="#1DDB16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/target"
+        android:text="RIGHT"
+        android:id="@+id/right"
+        android:textSize="20sp"
+        android:background="#1DDB16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/target"
+        android:text="TOP"
+        android:id="@+id/top"
+        android:textSize="20sp"
+        android:background="#1DDB16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target"
+        android:text="BOTTOM"
+        android:id="@+id/bottom"
+        android:textSize="20sp"
+        android:background="#1DDB16" />
+
+</RelativeLayout>
