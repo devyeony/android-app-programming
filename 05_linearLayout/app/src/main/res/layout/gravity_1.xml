@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        gravity 속성
+        - 뷰의 안쪽에 배치되는 텍스트 뷰, 이미지 뷰와 같은 내용물의 정렬 방식을 결정하는 속성
+        - 수평/수직 방향에 대해 정렬 방식을 지정할 수 있고, "|" 연산자로 두 속성을 묵어서 지정 가능
+        - 각 정렬 방식은 비트 필드로 정의되어 있으며, center 속성값과 fill 속성값은
+          수평/수직 정렬 상태 플래그의 조합으로 정의됨
+        - gravity 속성의 기본값은 좌측 상단에 배치되는 것이므로,
+          아래 코드는 뷰가 좌측 상단에 적용됨.
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Gravity Test!"
+        android:textSize="10pt" />
+
+</LinearLayout>

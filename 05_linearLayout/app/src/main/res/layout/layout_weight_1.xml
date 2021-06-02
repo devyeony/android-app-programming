@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        layout_weight 속성
+        - 부모 레이아웃의 남은 영역을 얼마나 차지할 것인가를 결정하는 비율 값
+        - layout_weight를 지정하지 않거나 layout_weight 값이 0이면 자신의 고유 크기만큼 차지
+        - 중요도가 0인 차일드 뷰는 분할에서 제외되며 나머지 뷰들끼리
+          중요도가 0인 차일드 뷰가 차지하고 있는 영역을 제외한 남은 영역을 중요도에 따라 할당받음
+        - 중요도가 1 이상이면 형제 뷰와의 비율에 따라 부모 레이아웃의 영역을 비율에 맞게 할당받음
+
+        아래 코드에서 전체 중요도의 합이 6이며 수직 레이아웃은 총 6등분되어 각각의 텍스트 뷰는
+        전체 레이아웃의 1:2:3의 비율로 레이아웃의 영역을 할당받음
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:text="분할에서 제외"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Text!!(1)"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:background="#FFE400"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="center Text!!(2)"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:background="#CEF279"
+        android:layout_weight="2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Text!!(3)"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:background="#5CD1E5"
+        android:layout_weight="3" />
+
+</LinearLayout>

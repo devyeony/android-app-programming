@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    orientation 속성
+    - 차일드 뷰를 일렬로 배열하는 방법은 수평 방향과 수직 방향이 있음
+    - vertical : 뷰를 위에서 아래로 수직 방향으로 배열
+    - horizontal : 뷰를 왼쪽에서 오른쪽으로 수평 방향으로 배열 (default)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Please" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT" />
+
+</LinearLayout>

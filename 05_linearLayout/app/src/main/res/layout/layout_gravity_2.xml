@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        layout_width 속성을 wrap_content로 정의해서 텍스트 뷰의 폭이 문자열의 길이만큼 차지하고
+        레이아웃의 폭보다 좁아져 여백이 생김.
+        이 상태에서 layout_gravity를 center로 지정하면 텍스트 뷰가 수평 중앙에 옴
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Layout_Gravity Test!!"
+        android:textSize="10pt"
+        android:layout_gravity="center"
+        android:background="#ABF200" />
+
+</LinearLayout>

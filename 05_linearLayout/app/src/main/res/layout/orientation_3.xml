@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        위의 LinearLayout에서 orientation은 vertical이지만
+        아래의 TextView들의 layout_width 속성이 match_parent로 되어 있어서
+        부모의 폭 전체를 다 차지하기 때문에 'Hello world!' 문자열만 보이게 됨
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="40dp"
+        android:textColor="#FFFF00"
+        android:textStyle="bold|italic"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25dp"
+        android:textColor="#ee04f6"
+        android:background="#2e52b9"
+        android:text="@string/welcome" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25dp"
+        android:text="@string/start" />
+
+</LinearLayout>
