@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FrameLayout
+    - 차일드 View를 배치하는 규칙이 따로 없고 모든 차일드는 FrameLayout의 좌측 상단에 나타나는 레이아웃
+    - 차일드 View가 2개 이상일 때는 추가된 순서대로 겹쳐서 표시되는 특징
+    - 먼저 추가된 차일드 View가 아래쪽에 깔리고 나중에 추가된 차일드 View가 위쪽에 겹쳐짐
+    - ViewGroup의 서브클래스로 레이아웃의 일종이므로 실행 중에 차일드 View를 관리할 수 있음
+    - 차일드 View 하나만 선택적으로 나타나게 할 수 있는 기능 가능
+
+    * 속성
+      1) foreground
+        : 차일드 위쪽에 살짝 얹히는 이미지를 지정함
+      2) foregroundGravity
+        : foreground 이미지의 위치를 결정함
+      3) measureAllChildren
+        : 레이아웃 크기의 결정을 모든 자식 view의 크기에 맞추거나
+          visibility 속성이 visible로 설정된 자식 View에만 맞출 것인지를 결정함
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        두 차일드 View의 visibility 속성을 따로 지정하지 않아서 보이는 상태.
+        FrameLayout은 구성되는 순서에 따라 위로 겹쳐지는 형태를 가지므로
+        지구 이미지가 바나나 이미지를 가리게 됨
+    -->
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banana" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/earth" />
+
+</FrameLayout>
