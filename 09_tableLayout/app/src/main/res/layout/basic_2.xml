@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--
+        - 열의 폭은 수직으로 같은 열에 있는 셀 중에서 가장 넓은 폭의 셀을 기준으로 결정됨
+        - 특별한 지정이 없으면 같은 열에 속한 셀은 왼쪽에 맞춰 정렬
+        - basic_1.xml의 문자열 SUN을 아래 코드처럼 "SUNDAY"로 바꾸면
+          첫번째 열의 폭이 넓어지며, 뒤의 열들은 뒤로 밀려 배치됨
+    -->
+    <TableRow>
+
+        <TextView
+            android:text="SUNDAY"
+            android:textSize="30px"
+            android:padding="5dip"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:text="MON"
+            android:textSize="30px"
+            android:padding="5dip" />
+
+        <TextView
+            android:text="TUE"
+            android:textSize="30px"
+            android:padding="5dip" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="5"
+            android:textSize="30px"
+            android:padding="5dip"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:text="6"
+            android:textSize="30px"
+            android:padding="5dip" />
+
+        <TextView
+            android:text="7"
+            android:textSize="30px"
+            android:padding="5dip" />
+
+    </TableRow>
+
+</TableLayout>

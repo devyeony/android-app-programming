@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TableLayout
+    - 표 형식으로 차일드 View를 배치하는 레이아웃
+    - TableLayout은 TableRow 객체로 구성되며
+      TableRow 객체 하나가 표에서 하나의 행에 해당됨
+    - TableRow 안에는 여러 개의 열이 배치되며, 하나의 열을 셀이라고 함
+    - 셀 하나에는 하나의 차일드 View가 포함되게 됨
+    - 가로 행의 개수 : TableRow의 개수
+    - 세로 열의 개수 : TableRow 안에 배치되는 차일드 View의 개수
+-->
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TableRow>
+        <TextView
+            android:text="SUN"
+            android:textSize="30px"
+            android:padding="5dip"
+            android:textColor="#FF0000" />
+        <TextView
+            android:text="MON"
+            android:textSize="30px"
+            android:padding="5dip" />
+        <TextView
+            android:text="TUE"
+            android:textSize="30px"
+            android:padding="5dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="5"
+            android:textSize="30px"
+            android:padding="5dip"
+            android:textColor="#FF0000" />
+        <TextView
+            android:text="6"
+            android:textSize="30px"
+            android:padding="5dip" />
+        <TextView
+            android:text="7"
+            android:textSize="30px"
+            android:padding="5dip" />
+    </TableRow>
+
+</TableLayout>
