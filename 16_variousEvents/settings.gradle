@@ -1,0 +1,2 @@
+rootProject.name = "variousEvents"
+include ':app'
