@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intent">
+
+    <!--
+        전화 걸기(CALL_PHONE) 기능 권한을 허용으로 설정
+        - 예전에는 이것만으로도 전화 걸기 권한을 얻을 수 있었음
+        - 하지만 보안상의 이유로 마시멜로부터는 권한이 필요할 때 사용자에게 권한을 받는 방식으로 바뀜
+        - 따라서 전화를 걸려면 이것과 함께 추가적인 java 코드 필요
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Intent">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
