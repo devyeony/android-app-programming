@@ -1,2 +1,2 @@
-# android-programming-study
-안드로이드 프로그래밍 공부
+# android-programming-practice
+안드로이드 프로그래밍 실습
