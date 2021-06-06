@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    보안상의 이유로 응용 프로그램에 포함된 모든 액티비티는 반드시 Manifest 파일에 등록되어야 함
+    Manifest 파일에 새로운 액티비티를 등록할 때
+    액티비티의 이름과 타이틀바에 표시할 제목은 반드시 지정해야 함
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.activity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Activity">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubActivity"
+            android:label="SubActivity"></activity>
+    </application>
+
+</manifest>
