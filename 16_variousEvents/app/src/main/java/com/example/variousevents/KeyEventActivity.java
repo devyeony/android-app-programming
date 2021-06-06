@@ -24,6 +24,7 @@ public class KeyEventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         vw = new MyView(this);
+        //키 입력은 포커스를 가진 View에게만 전달되므로 생성된 View의 포커스는 true로 적용
         vw.setFocusable(true);
         vw.setFocusableInTouchMode(true);
         setContentView(vw);
@@ -57,7 +58,7 @@ public class KeyEventActivity extends AppCompatActivity {
                     case KeyEvent.KEYCODE_DPAD_LEFT:
                         mX -= 5;
                         mR -= 5;
-                        invalidate();
+                        invalidate(); //invalidate()를 호출해서 변경된 좌표에 사각형을 다시 그림
                         return true;
                     case KeyEvent.KEYCODE_DPAD_RIGHT:
                         mX += 5;
